@@ -8,6 +8,15 @@ namespace MegaDesk_3_ViktorMerkulov
         public int width { get; set; }
         public int depth { get; set; }
         public int numDrawers { get; set; }
-        public string material { get; set; }
+        public SurfaceMaterials materials;
     }
+
+    enum SurfaceMaterials
+    {
+        Oak,
+        Laminate,
+        Pine,
+        Rosewood,
+        Veneer
+    };
 }
